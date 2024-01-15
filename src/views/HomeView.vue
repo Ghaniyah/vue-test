@@ -1,11 +1,14 @@
 <script setup>
-import Table from '../components/Table.vue';
-import TheWelcome from '../components/TheWelcome.vue'
+import ProductCard from '@/components/ProductCard.vue';
 </script>
 
 <template>
   <main>
-    <Table :items="products"/>
+    <v-row>
+      <v-col cols="3" v-for="product in products" :key="product.id">
+        <ProductCard :product="product"/>
+      </v-col>
+    </v-row>
   </main>
 </template>
 
@@ -17,11 +20,23 @@ export default {
         products: [
           {
             "id": 1,
-            "name": "Biscuit"
+            "name": "Jollof Rice",
+            "image_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
           },
           {
             "id": 2,
-            "name": "Cookies"
+            "name": "Spagetti",
+            "image_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          },
+          {
+            "id": 3,
+            "name": "Chinesse Rice",
+            "image_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+          },
+          {
+            "id": 4,
+            "name": "Taraba Beans",
+            "image_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
           }
         ]
       }
