@@ -20,23 +20,23 @@ export default {
         products: [
           {
             "id": 1,
-            "name": "Jollof Rice",
-            "image_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+            "name": "Red Dress",
+            "image_url": "./public/image/reddress.jpeg"
           },
           {
             "id": 2,
-            "name": "Spagetti",
-            "image_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+            "name": "Blue Dress",
+            "image_url": "./public/image/bluedress.jpeg"
           },
           {
             "id": 3,
-            "name": "Chinesse Rice",
-            "image_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+            "name": "Striped Dress",
+            "image_url": "./public/image/stripedress.jpeg"
           },
           {
             "id": 4,
-            "name": "Taraba Beans",
-            "image_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+            "name": "Red Short",
+            "image_url": "./public/image/redshort.jpeg"
           }
         ]
       }
